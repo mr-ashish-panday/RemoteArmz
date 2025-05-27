@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lead Management"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Manage your leads and track their progress"
+        android:textColor="@color/slate_600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/statusFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/allChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="All" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/newChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/contactedChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacted" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/qualifiedChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualified" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/proposalChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proposal Sent" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/negotiatingChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negotiating" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/wonChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Won" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/lostChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lost" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leadsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toTopOf="@id/addLeadButton"
+        app:layout_constraintTop_toBottomOf="@id/statusFilter" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addLeadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

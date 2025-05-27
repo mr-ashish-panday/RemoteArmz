@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "RemoteArmz Command Center"
+include ':app'
+
+// Enable Jetpack Compose
+enableFeaturePreview('COMPOSE')
+
+// Enable Hilt
+enableFeaturePreview('HILT')

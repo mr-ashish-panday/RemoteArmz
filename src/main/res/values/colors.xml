@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    
+    <!-- Custom Colors -->
+    <color name="emerald_400">#34D399</color>
+    <color name="blue_400">#60A5FA</color>
+    <color name="violet_400">#C7B2FE</color>
+    <color name="amber_400">#FBBF24</color>
+    <color name="slate_600">#4B5563</color>
+    <color name="slate_200">#E5E7EB</color>
+    <color name="blue_600">#3B82F6</color>
+</resources>
