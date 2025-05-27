@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.remotearmz.commandcenter.ui.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/clientsFragment"
+        android:name="com.remotearmz.commandcenter.ui.clients.ClientFragment"
+        android:label="Clients" >
+        <action
+            android:id="@+id/action_clientsFragment_to_clientDetailFragment"
+            app:destination="@id/clientDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clientDetailFragment"
+        android:name="com.remotearmz.commandcenter.ui.clients.ClientDetailFragment"
+        android:label="Client Detail" />
+
+    <fragment
+        android:id="@+id/leadsFragment"
+        android:name="com.remotearmz.commandcenter.ui.leads.LeadFragment"
+        android:label="Leads" >
+        <action
+            android:id="@+id/action_leadsFragment_to_leadDetailFragment"
+            app:destination="@id/leadDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/leadDetailFragment"
+        android:name="com.remotearmz.commandcenter.ui.leads.LeadDetailFragment"
+        android:label="Lead Detail" />
+
+    <fragment
+        android:id="@+id/clientsFragment"
+        android:name="com.remotearmz.commandcenter.ui.clients.ClientsFragment"
+        android:label="Clients" />
+
+    <fragment
+        android:id="@+id/leadsFragment"
+        android:name="com.remotearmz.commandcenter.ui.leads.LeadsFragment"
+        android:label="Leads" />
+
+    <fragment
+        android:id="@+id/targetsFragment"
+        android:name="com.remotearmz.commandcenter.ui.targets.TargetsFragment"
+        android:label="Targets" />
+
+    <fragment
+        android:id="@+id/outreachFragment"
+        android:name="com.remotearmz.commandcenter.ui.outreach.OutreachFragment"
+        android:label="Outreach" />
+
+</navigation>

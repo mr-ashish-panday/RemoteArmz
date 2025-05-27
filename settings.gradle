@@ -16,9 +16,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "RemoteArmz Command Center"
 include ':app'
-
-// Enable Jetpack Compose
-enableFeaturePreview('COMPOSE')
-
-// Enable Hilt
-enableFeaturePreview('HILT')

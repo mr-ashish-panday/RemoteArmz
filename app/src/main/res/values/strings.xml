@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RemoteArmz Command Center</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="clients">Clients</string>
+    <string name="leads">Leads</string>
+    <string name="targets">Targets</string>
+    <string name="outreach">Outreach</string>
+    <string name="welcome">Welcome to RemoteArmz Command Center</string>
+</resources>

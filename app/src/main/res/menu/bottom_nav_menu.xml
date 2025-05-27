@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/clientsFragment"
+        android:icon="@drawable/ic_clients"
+        android:title="Clients" />
+    <item
+        android:id="@+id/leadsFragment"
+        android:icon="@drawable/ic_leads"
+        android:title="Leads" />
+    <item
+        android:id="@+id/targetsFragment"
+        android:icon="@drawable/ic_targets"
+        android:title="Targets" />
+    <item
+        android:id="@+id/outreachFragment"
+        android:icon="@drawable/ic_outreach"
+        android:title="Outreach" />
+</menu>
