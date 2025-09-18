@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Remote Armz — Scale Faster with Elite Back-End Support</title>
+  <meta name="description" content="Remote Armz helps startups scale faster with growth marketing, executive assistance, engineering sprints, and custom projects." />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="theme-color" content="#0F0F0F" />
+
+  <!-- Preconnect and Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            chartreuse: '#CFFF47',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+
+  <!-- GA4 Placeholder -->
+  <!-- Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <!-- Ski p to content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="nav">
+        <button id="mobileMenuButton" class="hamburger" aria-label="Open Menu" aria-controls="mobileMenu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="#" class="logo" aria-label="Remote Armz Home">REMOTE ARMZ</a>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#brand-title">Services</a>
+          <!-- <a href="#case-study">Case Study</a> -->
+          <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a class="btn btn-primary btn-sm desktop-only-cta" target="_blank" rel="noopener noreferrer" href="https://calendly.com/ashishpanday9866250345/one-to-one-call">Book a Call</a>
+        </nav>
+      </div>
+      <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile Navigation" hidden>
+        <a href="#brand-title">Services</a>
+        <!-- <a href="#case-study">Case Study</a> -->
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://calendly.com/ashishpanday9866250345/one-to-one-call">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Tailwind: Section 1 - Hero -->
+    <section class="w-full bg-[#0F0F0F] font-sans min-h-screen flex items-center" aria-labelledby="tw-hero-title">
+      <div class="mx-auto max-w-[1400px] px-5 md:px-10 py-24 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+        <div>
+          <a href="https://calendly.com/ashishpanday9866250345/one-to-one-call" target="_blank" rel="noopener noreferrer" class="announcement-pill" aria-label="Limited spots open—reserve your spot now">
+            <span class="bullet" aria-hidden="true">★</span>
+            <span>Limited spots open—reserve your spot now →</span>
+          </a>
+          <h1 id="tw-hero-title" class="text-white text-4xl md:text-6xl font-bold leading-tight">Power Your Startup Growth with On Demand Backend Support</h1>
+          <p class="text-gray-300 text-lg md:text-xl leading-relaxed mt-6">From operations to engineering, we power your foundational support—no overhead, all outcomes.</p>
+          <a href="https://calendly.com/ashishpanday9866250345/one-to-one-call" target="_blank" rel="noopener noreferrer" aria-label="Get Started" class="inline-flex mt-8 px-8 py-3 rounded-lg bg-chartreuse text-[#161616] font-semibold shadow-[0_8px_24px_rgba(207,255,71,0.3)] hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-chartreuse focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F0F0F] transition cta-track" data-cta="hero_get_started">Get Started</a>
+        </div>
+        <div class="w-full">
+          <div class="w-full h-64 md:h-96 bg-[#151515] rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden hero-image">
+            <img src="nano-banana-2025-09-18T09-47-21.png" alt="Header image" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailwind: Section 2 - Client Success Stories -->
+    <section class="w-full bg-[#0D0D0D] font-sans" aria-labelledby="tw-clients-title">
+      <div class="max-w-6xl mx-auto px-5 pt-16 pb-16">
+        <h2 id="tw-clients-title" class="text-white text-3xl md:text-5xl text-center font-bold mb-12">Our Clients Go On to Collaborate With Industry Leaders</h2>
+        <div class="flex justify-center mb-8">
+          <div class="w-16 h-1 rounded-full bg-[#DFFF00]"></div>
+        </div>
+        <div class="logo-grid-container">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 items-center justify-items-center">
+            <div class="logo-pill">
+              <span class="logo-text">Iman Gadzhi</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">Forbes</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">Vanguard</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">BBC</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">LoI Ventures</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text-multiline">closingclients.io</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">Spicy Wear</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">Flutter</span>
+            </div>
+            <div class="logo-pill">
+              <span class="logo-text">SCRAN</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-px bg-white/20 mt-16"></div>
+      </div>
+    </section>
+
+    <!-- Tailwind: Section 3 - Testimonials -->
+    <section id="case-study" class="w-full bg-[#0D0D0D] font-sans" aria-label="Testimonials">
+      <div class="mx-auto max-w-[1400px] px-4 md:px-4 pt-16 pb-20 md:pt-16 md:pb-20">
+        <h2 class="text-white text-3xl md:text-5xl font-bold text-center mb-12">Testimonials</h2>
+        <div class="testimonials-grid grid grid-cols-1 md:grid-cols-2 gap-10">
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">When it comes to technical expertise, you guys are really good.</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="felicia.jpg" alt="Headshot of Felicia Palladi" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Felicia Palladi</div>
+                <div class="text-gray-400 text-sm">DUBAI</div>
+              </div>
+            </div>
+          </article>
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">You communicate with genuine respect—I really appreciate that.</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="amir.jpg" alt="Headshot of Amir saravi" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Amir saravi</div>
+                <div class="text-gray-400 text-sm">CANADA</div>
+              </div>
+            </div>
+          </article>
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">The Miro board that the team has created is really nice.</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="image.png" alt="Headshot of confidential" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Konrad STRATUSS</div>
+                <div class="text-gray-400 text-sm">ROMANIA</div>
+              </div>
+            </div>
+          </article>
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">The quality of leads looks really good.</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="jac.jpg" alt="Headshot of Jacques Schaeken" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Jacques Schaeken</div>
+                <div class="text-gray-400 text-sm">Ireland</div>
+              </div>
+            </div>
+          </article>
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">You guys are way good than other Virtual Assistants in the market.</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="don.jpg" alt="Headshot of Don Beni" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Don Beni,</div>
+                <div class="text-gray-400 text-sm">California , U.S.A</div>
+              </div>
+            </div>
+          </article>
+          <article class="border border-white/10 bg-[#0D0D0D] rounded-lg p-8">
+            <svg class="text-chartreuse" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7h3L8 21H3l6-14Zm11 0h3l-4 14h-5l6-14Z"/></svg>
+            <p class="text-white text-lg mt-4">The research you conducted for one of our key clients was truly commendable</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="image copy.png" alt="Headshot of confidential" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="text-white font-semibold">Confidential</div>
+                <div class="text-gray-400 text-sm">San francisco , U.S.A</div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="clients-note" style="font-family: Inter, ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial; font-style: italic; font-size: 16px; color: rgba(187,187,187,0.9); margin-top: 32px; text-align: center; width: 100%; display: block;">…and many more happy clients.</p>
+      </div>
+    </section>
+
+    <!-- Tailwind: Section 4 - Brand Message & CTA -->
+    <section class="w-full bg-[#0D0D0D] font-sans text-center" aria-labelledby="brand-title">
+      <div class="mx-auto max-w-[1400px] px-6 py-24 md:py-28">
+        <h2 id="brand-title" class="text-white text-3xl md:text-4xl font-semibold">You don’t build a company<br>You build the people and systems that build it.</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mt-6 text-lg md:text-xl">Great businesses start with great support. From operations to engineering, we power your foundational Support.</p>
+      </div>
+    </section>
+
+    <!-- Tailwind: How We Power Your Growth -->
+      <section id="services" class="w-full bg-[#0D0D0D] font-sans" aria-labelledby="power-growth-title">
+       <div class="max-w-6xl mx-auto px-6 py-10">
+        <h2 id="power-growth-title" class="sr-only">How We Power Your Growth</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
+          <!-- Growth Marketing -->
+          <article class="bg-[#111111] border border-white/10 rounded-lg p-6 hover:shadow-lg text-left">
+            <h3 class="text-2xl font-semibold" style="color:#DFFF00">Growth Marketing</h3>
+            <p class="mt-1 text-lg font-medium text-white">80 Hand-Verified C-Suite Leads Delivered Monthly</p>
+            <p class="mt-3 text-base" style="color:#CCCCCC">Receive a curated list of decision-maker contacts with verified email, direct phone, and LinkedIn profile—so you can immediately run high-impact outreach.</p>
+            <a href="https://calendly.com/ashishpanday9866250345/one-to-one-call" target="_blank" rel="noopener noreferrer" aria-label="See Lead Packages on Calendly" class="mt-4 inline-block btn btn-secondary btn-md">See Lead Packages</a>
+          </article>
+          <!-- Executive Assistant -->
+          <article class="bg-[#111111] border border-white/10 rounded-lg p-6 hover:shadow-lg text-left">
+            <h3 class="text-2xl font-semibold" style="color:#DFFF00">Executive Assistant</h3>
+            <p class="mt-1 text-lg font-medium text-white">CRM, Email & Admin Support—Free 10+ Hours Weekly</p>
+            <p class="mt-3 text-base" style="color:#CCCCCC">Offload routine tasks and focus on growth: we manage your CRM, declutter your inbox, schedule your calendar, and handle other admin tasks.</p>
+            <a href="https://calendly.com/ashishpanday9866250345/one-to-one-call" target="_blank" rel="noopener noreferrer" aria-label="Book a Free Trial on Calendly" class="mt-4 inline-block btn btn-primary btn-md">Book a Free Trial</a>
+          </article>
+          <!-- Cracked Engineering -->
+          <article class="bg-[#111111] border border-white/10 rounded-lg p-6 hover:shadow-lg text-left">
+            <h3 class="text-2xl font-semibold" style="color:#DFFF00">Cracked Engineering</h3>
+            <p class="mt-1 text-lg font-medium text-white">20-Hour Dev Sprints for MVP Features & Automations</p>
+            <p class="mt-3 text-base" style="color:#CCCCCC">Fast-track your roadmap: one 20-hour sprint delivers a key feature or automates a core workflow—complete with clean, documented code and handoff documentation.</p>
+            <a href="https://calendly.com/ashishpanday9866250345/one-to-one-call" target="_blank" rel="noopener noreferrer" aria-label="Start a 20-Hour Sprint on Calendly" class="mt-4 inline-block btn btn-secondary btn-md">Start a 20-Hour Sprint</a>
+          </article>
+          <!-- Custom Projects -->
+          <article class="bg-[#111111] border border-white/10 rounded-lg p-6 hover:shadow-lg text-left">
+            <h3 class="text-2xl font-semibold" style="color:#DFFF00">Custom Projects</h3>
+            <p class="mt-1 text-lg font-medium text-white">Record a Loom—We Scope, Quote & Deliver</p>
+            <p class="mt-3 text-base" style="color:#CCCCCC">Have a unique need? Send us a Loom video describing your requirements, and we’ll provide a fixed-price scope and execution plan within 24 hours.</p>
+            <a href="https://www.loom.com" target="_blank" rel="noopener noreferrer" aria-label="Submit Your Loom" class="mt-4 inline-block btn btn-primary btn-md">Submit Your Loom</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accent bar after service block -->
+    <section class="w-full bg-[#0D0D0D] font-sans text-center">
+      <div class="mx-auto max-w-[1400px] px-6 pb-12">
+        <div class="mx-auto w-60 h-1 rounded-full bg-chartreuse"></div>
+      </div>
+    </section>
+
+    <!-- Process Section (Fixed Left, Scrolling Right) -->
+    <section id="process" class="process" aria-labelledby="process-title">
+      <div class="process-left">
+        <div class="process-left-inner">
+          <h2 id="process-title" class="process-title">Working with us is as easy as 1-2-3.</h2>
+          <a class="btn btn-primary btn-lg cta-track" data-cta="process_get_started" target="_blank" rel="noopener noreferrer" href="https://calendly.com/ashishpanday9866250345/one-to-one-call">Get Started</a>
+        </div>
+      </div>
+      <div class="process-right">
+        <div class="step viewport" aria-labelledby="step1-title">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3 id="step1-title" class="step-title">Book a free strategy call.</h3>
+          <p class="step-desc">We'll assess your growth challenges and show you which of our service blocks matches your needs best.</p>
+        </div>
+        <div class="step viewport" aria-labelledby="step2-title">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3 id="step2-title" class="step-title">Choose your service block (quickly).</h3>
+          <p class="step-desc">After we understand your goals, we'll present tailored options with clear deliverables and pricing. Pick the most urgent one first.</p>
+        </div>
+        <div class="step viewport" aria-labelledby="step3-title">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3 id="step3-title" class="step-title">Watch the magic happen.</h3>
+          <p class="step-desc">Onboarding in 24 hours—whether it's your first lead list, CRM overhaul, or sprint kick-off. Results start immediately.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Callout Section -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+      <div class="container pricing-grid">
+        <div class="pricing-left">
+          <h2 id="pricing-title" class="pricing-title">Get Started for Just $799/Month</h2>
+          <ul class="benefits" role="list">
+            <li class="benefit-item"><span class="check" aria-hidden="true">✓</span> <span>Best-in-class support at the industry’s most competitive rate</span></li>
+            <li class="benefit-item"><span class="check" aria-hidden="true">✓</span> <span>Dev sprints or custom projects delivered fast</span></li>
+            <li class="benefit-item"><span class="check" aria-hidden="true">✓</span> <span>Cancel anytime—no long-term lock-in</span></li>
+          </ul>
+          <a class="btn btn-primary btn-lg btn-block cta-track" data-cta="pricing_book" target="_blank" rel="noopener noreferrer" href="https://calendly.com/ashishpanday9866250345/one-to-one-call">Book a Call</a>
+        </div>
+        <div class="pricing-right" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="rings"></div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <div class="footer-logo">REMOTE ARMZ</div>
+        <p class="footer-tagline">We help startups scale through elite back-end support.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="https://docs.google.com/document/d/1_8IpljpdYp2bYvb__6gaDk4wsSQyOEvE4L8ts0pcqhU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">Privacy Policy</a>
+        <a href="https://docs.google.com/document/d/1_8IpljpdYp2bYvb__6gaDk4wsSQyOEvE4L8ts0pcqhU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">Refund Policy</a>
+        <a href="https://docs.google.com/document/d/1_8IpljpdYp2bYvb__6gaDk4wsSQyOEvE4L8ts0pcqhU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">Terms and Conditions</a>
+        <a href="mailto:ashishpanday9818@gmail.com" class="footer-link" aria-label="Email: ashishpanday9818@gmail.com">Contact Us</a>
+      </nav>
+      <div class="footer-right">
+        <a class="social" href="https://x.com/ASHISHPAND26832?t=e8YXpmfhNg96YiXSN7awIQ&s=09" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) Profile: ASHISHPAND26832">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18.244 2H21.5l-7.64 8.73L23.5 22h-6.02l-4.71-5.68L7.3 22H4.04l8.18-9.35L.5 2h6.18l4.26 5.17L18.244 2Zm-1.05 18h1.63L6.88 4h-1.7l11.99 16Z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="social" href="https://www.instagram.com/ashish__2061" target="_blank" rel="noopener noreferrer" aria-label="Instagram: ashish__2061">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Remote Armz. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
